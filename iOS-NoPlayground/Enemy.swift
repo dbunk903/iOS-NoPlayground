@@ -9,5 +9,5 @@ class Enemy {
     func attack() {
         print("Land a hit, does \(attackStrength) damage.")
     }
-    
+     
 }
