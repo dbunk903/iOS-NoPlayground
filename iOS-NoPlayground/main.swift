@@ -1,1 +1,1 @@
-print("Hello")
+// Class Demo
