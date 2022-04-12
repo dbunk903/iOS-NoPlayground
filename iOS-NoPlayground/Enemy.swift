@@ -1,4 +1,4 @@
-class Enemy {
+struct Enemy {
     var health : Int
     var attackStrength : Int
     
@@ -10,6 +10,10 @@ class Enemy {
     
     func move() {
         print("Walk forwards.")
+    }
+    
+    mutating func takeDamage(amount: Int){
+        health = health - amount
     }
     
     func attack() {
