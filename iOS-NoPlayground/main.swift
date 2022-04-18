@@ -1,13 +1,8 @@
-var welcome = "hello"
-welcome.insert("!", at:welcome.endIndex)
-print(welcome)
-
-welcome.insert(contentsOf: " there", at: welcome.index(before: welcome.endIndex))
-print(welcome)
-
-welcome.remove(at: welcome.index(before: welcome.endIndex))
-print(welcome)
-
-let range = welcome.index(welcome.endIndex, offsetBy: -6)..<welcome.endIndex
-welcome.removeSubrange(range)
-print(welcome)
+let greeting = "Hello, World!"
+let index = greeting.firstIndex(of: ",") ?? greeting.endIndex
+let beginning = greeting[..<index]
+// beginning : Hello
+print(beginning)
+// SubString인 beginning을 String으로 변환
+let newString = String(beginning)
+print(newString)
