@@ -1,13 +1,10 @@
-let string1 = "hello"
-let string2 = " there"
-var welcome = string1 + string2
-// welcome : "hello there"
-print(welcome)
+let precomposed: Character = "\u{D55C}"                        // 한
+let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"    // ㅎ, ㅏ,ㄴ
+  // precomposed : 한, decomposed 한
 
-var instruction = "look over"
-instruction += string2
-print(instruction)
+print(precomposed, decomposed)
 
-let exclamationMark: Character = "!"
-welcome.append(exclamationMark)
-print(welcome)
+let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
+  // regionalIndicatorForUS : 🇺🇸
+
+print(regionalIndicatorForUS)
