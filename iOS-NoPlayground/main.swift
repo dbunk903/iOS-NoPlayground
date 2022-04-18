@@ -1,10 +1,14 @@
-let precomposed: Character = "\u{D55C}"                        // 한
-let decomposed: Character = "\u{1112}\u{1161}\u{11AB}"    // ㅎ, ㅏ,ㄴ
-  // precomposed : 한, decomposed 한
+let greeting = "Guten Tag!"
+greeting[greeting.startIndex]
+// G
+greeting[greeting.index(before: greeting.endIndex)]
+// !
+greeting[greeting.index(after: greeting.startIndex)]
+// u
+let index = greeting.index(greeting.startIndex, offsetBy: 7)
+greeting[index]
+// a
 
-print(precomposed, decomposed)
+print(greeting[greeting.startIndex])
 
-let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
-  // regionalIndicatorForUS : 🇺🇸
 
-print(regionalIndicatorForUS)
