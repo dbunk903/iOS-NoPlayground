@@ -1,12 +1,5 @@
-class Friend{
-    var name : String
-    func changeName(_ newName: String){
-        self.name = newName
-    }
-    init(_ name: String) {
-        self.name = name
-    }
+func myFunction(쓰기좋은이름 name: String) -> String{
+    return name+"!!"
 }
-let myFriend = Friend("이민행")
-myFriend.changeName("쩡대리")
-print(myFriend.name)
+
+print(myFunction(쓰기좋은이름: "Brian"))
