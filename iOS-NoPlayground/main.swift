@@ -1,5 +1,5 @@
-func myFunction(쓰기좋은이름 name: String) -> String{
-    return name+"!!"
-}
+let myOptional: String?
+myOptional = nil
+let text: String = myOptional ?? "Angela"
 
-print(myFunction(쓰기좋은이름: "Brian"))
+print(text)
