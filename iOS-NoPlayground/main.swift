@@ -1,5 +1,6 @@
-let myOptional: String?
-myOptional = nil
-let text: String = myOptional ?? "Angela"
+let quotation = "We're a lot alike, you and I."
+let sameQuotation = "We're a lot alike, you and I."
 
-print(text)
+if quotation == sameQuotation{
+    print("Two quotes are considered equal")
+}
