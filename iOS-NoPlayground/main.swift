@@ -1,12 +1,10 @@
-// "Voulez-vous un café?" using LATIN SMALL LETTER E WITH ACUTE
-let eAcuteQuestion = "Voulez-vous un caf\u{E9}?"
+let latinCapitalLetterA: Character = "\u{41}"
 
-// "Voulez-vous un café?" using LATIN SMALL LETTER E and COMBINING ACUTE ACCENT
-let combinedEAcuteQuestion = "Voulez-vous un caf\u{65}\u{301}?"
+let cyrillicCapitalLetterA: Character = "\u{0410}"
 
-print(eAcuteQuestion)
-print(combinedEAcuteQuestion)
-if eAcuteQuestion == combinedEAcuteQuestion {
-    print("These two strings are considered equal")
+print(latinCapitalLetterA)
+print(cyrillicCapitalLetterA)
+if latinCapitalLetterA != cyrillicCapitalLetterA {
+    print("These two characters are not equivalent.")
 }
-// These two strings are considered equal 출력
+// Prints "These two characters are not equivalent."
