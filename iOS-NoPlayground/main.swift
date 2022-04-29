@@ -1,12 +1,11 @@
-struct MyOptional{
-    var property = 123
-    func method(){
-        print("I am the struct's method.")
-    }
-}
-let myOptional: MyOptional?
+var isDarkMode: Bool = true
+//
+//if !isDarkMode{
+//    print("다크모드가 아닙니다")
+//} else{
+//    print("다크모드입니다.")
+//}
 
-myOptional = MyOptional() // myOptional = "Angela"
+var title: String = !isDarkMode ? "다크모드입니다" : "다크모드가 아닙니다"
 
-myOptional?.method()
-
+print(title)
