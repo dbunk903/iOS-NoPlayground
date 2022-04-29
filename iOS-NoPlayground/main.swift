@@ -1,11 +1,9 @@
-var isDarkMode: Bool = true
-//
-//if !isDarkMode{
-//    print("다크모드가 아닙니다")
-//} else{
-//    print("다크모드입니다.")
-//}
+var myArray: [Int] = [0,1,2,3,4,5,6,7,8,9,10]
 
-var title: String = !isDarkMode ? "다크모드입니다" : "다크모드가 아닙니다"
+for i in myArray where i > 5{
+    print(i)
+}
 
-print(title)
+for item in myArray where item % 2 == 0{
+    print("짝수 : \(item)")
+}
