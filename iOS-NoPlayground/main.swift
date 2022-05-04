@@ -1,31 +1,14 @@
-var favoriteGenres: Set<String> = ["Rock", "Classical", "Hip hop"]
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
 
-print("I have \(favoriteGenres.count) favorite music genres.")
+print(oddDigits.union(evenDigits).sorted())
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(oddDigits.intersection(evenDigits).sorted())
+// []
+print(oddDigits.subtracting(singleDigitPrimeNumbers).sorted())
+// [1, 9]
+print(oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted())
+// [1, 2, 9]
 
-//I have 3 favorite music genres.
-
-if favoriteGenres.isEmpty{
-    print("As far as music goes, I'm not picky.")
-} else {
-    print("I have particular music preferences.")
-}
-
-favoriteGenres.insert("Jazz")
-
-if let removedGenre = favoriteGenres.remove("Rock") {
-    print("\(removedGenre)? I'm over it.")
-} else {
-    print("I never much cared for that.")
-}
-
-//Rock? I am over it.
-
-print(favoriteGenres)
-
-if favoriteGenres.contains("Funk"){
-    print("I get up on the good foot.")
-} else {
-    print("It's too funky in here")
-}
-
-// It's too funky in here
+print(oddDigits)
