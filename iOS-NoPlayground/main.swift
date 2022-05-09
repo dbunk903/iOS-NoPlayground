@@ -1,9 +1,5 @@
-var namesOfInteger = [Int:String]()
+var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+print(airports)
 
-namesOfInteger[16] = "sisteen"
-
-print(namesOfInteger)
-
-namesOfInteger = [:]
-
-print(namesOfInteger)
+var airport = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+print(airport)
