@@ -1,14 +1,11 @@
-let somePoint = (1, 1)
-switch somePoint {
-case (0, 0):
-    print("\(somePoint) is at the origin")
-case (_, 0):
-    print("\(somePoint) is on the x-axis")
-case (0, _):
-    print("\(somePoint) is on the y-axis")
-case (-2...2, -2...2):
-    print("\(somePoint) is inside the box")
+let someCharacter: Character = "e"
+switch someCharacter {
+case "a", "e", "i", "o", "u":
+    print("\(someCharacter) is a vowel")
+case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m",
+     "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z":
+    print("\(someCharacter) is a consonant")
 default:
-    print("\(somePoint) is outside of the box")
+    print("\(someCharacter) is not a vowel or a consonant")
 }
-// Prints "(1, 1) is inside the box"
+// Prints "e is a vowel"
