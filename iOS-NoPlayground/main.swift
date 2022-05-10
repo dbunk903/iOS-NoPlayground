@@ -1,14 +1,16 @@
-var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
-print(airports)
-
-var airport = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
-print(airport)
-
-if airports.isEmpty {
-    print("empty")
-} else{
-    print("not empty")
+let names = ["Anna", "Alex", "Brian", "Jack"]
+for name in names {
+    print("Hello, \(name)!")
 }
+// Hello, Anna!
+// Hello, Alex!
+// Hello, Brian!
+// Hello, Jack!
 
-airports["LHR"] = "London"
-//the airpots dictionary now contains 3 items
+let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+for (animalName, legCount) in numberOfLegs {
+    print("\(animalName)s have \(legCount) legs")
+}
+// ants have 6 legs
+// spiders have 8 legs
+// cats have 4 legs
