@@ -1,32 +1,22 @@
-struct MyArray<T>{
-    
-    // 제네릭을 담은 빈 배열
-    var elements : [T] = [T]()
-    
-    // 생성자
-    init(_ elements: [T]){
-        self.elements = elements
+class Solution {
+    func addStrings(_ num1: String, _ num2: String) -> String {
+        var num1 = Array(num1)
+        var num2 = Array(num2)
+        
+        var carry = 0
+        var result = ""
+        while !num1.isEmpty || num2.isEmpty{
+            let val1 = num1.isEmpty ? "0" : num1.removeLast()
+            let val2 = num2.isEmpty ? "0" : num2.removeLast()
+            
+            let sum = Int(String(val1))! + Int(String(val2))! + carry
+            
+            result.append("\(sum%10)")
+            carry = sum / 10
+        }
+        if carry != 0{
+            result.append("\(carry)")
+        }
+        return String(result.reversed())
     }
-    
 }
-
-struct Friend {
-    var name: String
-}
-
-struct PpakCoder {
-    var name: String
-}
-
-var mySomeArray = MyArray([1,2,3])
-print("mySomeArray : \(mySomeArray)")
-
-var myStringArray = MyArray(["가","나","다"])
-print("myStringArray : \(myStringArray)")
-
-let friend_01 = Friend(name: "철수")
-let friend_02 = Friend(name: "영희")
-let friend_03 = Friend(name: "수잔")
-
-var myFriendsArray = MyArray([friend_01,friend_02,friend_03])
-print("myFriendsArray : \(myFriendsArray)")
