@@ -8,3 +8,6 @@ func add (n1: Int, n2:Int) -> Int{
 
 
 print(calculator(n1: 2, n2: 4, operation: {(n1:Int, n2:Int) -> Int in return n1+n2}))
+print(calculator(n1: 2, n2: 4, operation: {$0 * $1}))
+print(calculator(n1: 2, n2: 4){$0 * $1})
+
