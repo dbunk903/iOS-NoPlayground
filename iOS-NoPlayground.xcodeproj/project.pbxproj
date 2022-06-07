@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA5244BE284F03F90022A118 /* Codility_5-4_MinAvgTwoSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5244BD284F03F90022A118 /* Codility_5-4_MinAvgTwoSlice.swift */; };
 		CA9E89B527FFD7E600E883AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E89B427FFD7E600E883AD /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CA5244BD284F03F90022A118 /* Codility_5-4_MinAvgTwoSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codility_5-4_MinAvgTwoSlice.swift"; sourceTree = "<group>"; };
 		CA9E89B127FFD7E600E883AD /* iOS-NoPlayground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "iOS-NoPlayground"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9E89B427FFD7E600E883AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +41,6 @@
 		CA9E89A827FFD7E600E883AD = {
 			isa = PBXGroup;
 			children = (
-				CA5244BD284F03F90022A118 /* Codility_5-4_MinAvgTwoSlice.swift */,
 				CA9E89B327FFD7E600E883AD /* iOS-NoPlayground */,
 				CA9E89B227FFD7E600E883AD /* Products */,
 			);
@@ -124,7 +121,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9E89B527FFD7E600E883AD /* main.swift in Sources */,
-				CA5244BE284F03F90022A118 /* Codility_5-4_MinAvgTwoSlice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
